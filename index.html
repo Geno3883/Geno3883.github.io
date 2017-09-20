@@ -1,37 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<title>Main Page | Home</title>
-</head>
-<body>
-<header>
-	<h1>The Geno Experience</h1>
-</header>
+body
+{
+	background-color: gray;
+	margin: 0;
+}
 
-<nav class="navbar">
-	<ul class="navtext">
-		<li><a href="index.html">Home</a></li>
-		<li>
-		<a href="#">Gaming</a>
-			<ul>
-				<li><a href="twitch.html">Twitch</a></li>
-				<li><a href="https://www.youtube.com/user/geno3883/videos">Youtube</a></li>
-			</ul>
-		</li>
-		<!--<li>
-		<a href="#">Art</a>
-			<ul>
-				<li><a href="traditional.html">Traditional</a></li>
-				<li><a href="paintings.html">Paintings</a></li>
-				<li><a href="digital.html">Digital</a></li>
-			</ul>
-		</li>
-		<li><a href="blog.html">Blog</a></li>
-	</ul>-->
-</nav>
+.navbar
+{
+	height: 40px;
+	width:100%;
+	position: absolute;
+	background-image: url('siteimage.png');
+	background-origin: content-box;
+	background-repeat: repeat-x;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
 
-</body>
-</html>
+.navbar li {
+	
+	display: block;
+	margin-right: 25px;
+	border-radius: 15px 50px 30px;
+    float: left;
+	width: 100px;
+	background-color:  #D6F3F5;
+	position: relative;
+	margin-top: -2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar li:hover ul
+{
+	visibility: visible;
+}
+
+.navbar li:hover
+{
+	background-color: #0CF700;
+}
+
+.navbar li ul
+{
+	position: absolute;
+	visibility: hidden;
+}
+
+.navtext
+{
+	margin-top: 8px;
+	padding-left: 50px;
+}
+
+h1
+{
+	padding: 0;
+	margin: 0;
+	height: 150px;
+	line-height: 150px;
+	background-color: black;
+	color: white;
+}
+
+.twitchvideo
+{
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
